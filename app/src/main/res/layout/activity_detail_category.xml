@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailCategoryActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_recipes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_recipe" />
+    <LinearLayout
+    android:id="@+id/bottomMenu"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_gravity="bottom"
+    android:background="#875140"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent">
+
+    <!-- Menu Home -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <!-- Menu Home -->
+        <TextView
+            android:id="@+id/menuHome"
+            android:layout_width="0dp"
+            android:layout_height="-40dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/baseline_home_24"
+            android:padding="16dp"
+            android:text="Home"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <!-- Menu Profile -->
+        <TextView
+            android:id="@+id/menuProfile"
+            android:layout_width="0dp"
+            android:layout_height="-40dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:padding="16dp"
+            android:textColor="@color/white"
+            android:text="Profile"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Menu Logout -->
+        <TextView
+            android:id="@+id/menuLogout"
+            android:layout_width="0dp"
+            android:layout_height="-40dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:drawableStart="@drawable/baseline_logout_24"
+            android:padding="16dp"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

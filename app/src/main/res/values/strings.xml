@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyRecipe</string>
+    <string name="categories">Kategori</string>
+    <string name="all_recipes">Semua Resep</string>
+    <string name="search_recipes">Cari Resep</string>
+    <string name="app_nam">MyKitchen\n</string>
+</resources>
